@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — RCPB Contabilidade</title>
+<meta name="description" content="Fale com a RCPB Contabilidade. Shopping Liv Mall — Av. Gov. Flávio Ribeiro Coutinho, 500, Sala 220 - Jardim Oceania, João Pessoa/PB.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .contato-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:start;}
+  @media(min-width:900px){.contato-grid{grid-template-columns:1fr 420px;}}
+  .info-item{display:flex;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);}
+  .info-item .k{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--red);width:110px;flex:none;}
+  .info-item .v{font-size:15px;}
+  .form-card{background:var(--off-white);border:1px solid var(--line);border-radius:var(--radius);padding:28px;}
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:12px;font-weight:700;margin-bottom:6px;}
+  .field input, .field textarea{
+    width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:var(--radius);
+    font-family:inherit;font-size:14px;background:var(--white);
+  }
+  .field textarea{min-height:110px;resize:vertical;}
+  .field input:focus, .field textarea:focus{outline:2px solid var(--red);outline-offset:1px;}
+  .form-card .btn{width:100%;justify-content:center;margin-top:6px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html" style="display:flex;align-items:center;gap:12px;">
+      <img src="img/fatima-logo.png" alt="Fátima Marques" style="height:48px;width:auto;">
+      <span style="width:1px;height:24px;background:var(--line);display:inline-block;"></span>
+      RCPB <span>Contabilidade</span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="estudo-tributario.html">Estudo Tributário</a>
+        <a href="contato.html" class="active">Contato</a>
+      </div>
+      <a class="btn header-cta" href="estudo-tributario.html">Quero meu Raio-X</a>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="estudo-tributario.html">Estudo Tributário</a>
+    <a href="contato.html">Contato</a>
+    <a class="btn" href="estudo-tributario.html">Quero meu Raio-X</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contato</span>
+    <h1>Vamos conversar sobre a sua empresa.</h1>
+    <p>Atendimento para donos e sócios de empresas de serviço, comércio e indústria em todo o Brasil.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contato-grid">
+    <div>
+      <div class="info-item"><span class="k">WhatsApp</span><span class="v">(83) 99621-4000</span></div>
+      <div class="info-item"><span class="k">Telefone</span><span class="v">(83) 3512-5503</span></div>
+      <div class="info-item"><span class="k">E-mail</span><span class="v"><a href="mailto:rcpb@rcpb-fm.com.br" style="color:var(--red);font-weight:700;">rcpb@rcpb-fm.com.br</a></span></div>
+      <div class="info-item"><span class="k">Local</span><span class="v">Shopping Liv Mall — Av. Gov. Flávio Ribeiro Coutinho, 500 — Sala 220, 1º andar<br>Jardim Oceania, João Pessoa - PB, 58037-005</span></div>
+      <div class="info-item"><span class="k">Atendimento</span><span class="v">Segunda a sexta, 8h às 12h e 13h às 18h</span></div>
+      <div class="info-item"><span class="k">Rede</span><span class="v">Membro BNI João Pessoa · Integrante do RC_HUB</span></div>
+      <div class="info-item"><span class="k">Redes sociais</span><span class="v"><a href="https://www.instagram.com/fatimamarquesrc/" target="_blank" rel="noopener" style="color:var(--red);font-weight:700;">Instagram</a> · <a href="https://www.linkedin.com/in/fatima-marques-1ba301412" target="_blank" rel="noopener" style="color:var(--red);font-weight:700;">LinkedIn</a></span></div>
+      <p style="margin-top:24px;color:var(--gray);font-size:14.5px;max-width:480px;">
+        Prefere ir direto ao ponto? Fale agora pelo WhatsApp com nossa equipe.
+      </p>
+      <a class="btn mt-24" href="https://wa.me/5583996214000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+
+    <div class="form-card">
+      <h3 style="font-size:16px;margin-bottom:4px;">Envie uma mensagem</h3>
+      <p style="font-size:12.5px;color:var(--gray);margin-bottom:20px;">Retornamos em até 1 dia útil</p>
+      <form data-form>
+        <div class="field">
+          <label for="nome">Nome completo</label>
+          <input id="nome" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="field">
+          <label for="empresa">Empresa</label>
+          <input id="empresa" type="text" placeholder="Nome da empresa" required>
+        </div>
+        <div class="field">
+          <label for="whatsapp">WhatsApp</label>
+          <input id="whatsapp" type="tel" placeholder="(83) 99999-9999" required>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+        <button class="btn" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:28px;">
+    <style>
+      .video-mapa-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+      .mapa-embed{height:300px;}
+      @media(min-width:700px){
+        .video-mapa-grid{grid-template-columns:320px 1fr;align-items:start;}
+        .mapa-embed{height:569px;}
+      }
+    </style>
+    <div class="video-mapa-grid">
+      <div>
+        <video src="video/endereco-rcpb.mp4" controls muted playsinline poster="img/localizacao-shopping-liv-mall.png" style="border-radius:var(--radius);width:100%;aspect-ratio:9/16;display:block;"></video>
+        <p style="font-size:12px;color:var(--gray);margin-top:8px;">Como chegar até a RCPB — Shopping Liv Mall</p>
+      </div>
+      <div>
+        <iframe class="mapa-embed" src="https://www.google.com/maps?q=Shopping+Liv+Mall,+Av.+Gov.+Fl%C3%A1vio+Ribeiro+Coutinho,+500,+Jardim+Oceania,+Jo%C3%A3o+Pessoa+-+PB&output=embed" style="border:1px solid var(--line);border-radius:var(--radius);width:100%;display:block;background:var(--off-white);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p style="font-size:12px;color:var(--gray);margin-top:8px;">Localização no Google Maps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">RCPB <span style="color:var(--red)">Contabilidade</span></a>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+          <img src="img/fatima-logo-white.png" alt="Fátima Marques" style="height:48px;width:auto;">
+          <span style="width:1px;height:26px;background:#3A3A3A;display:inline-block;"></span>
+          <img src="img/rchub-logo-white.png" alt="RC_HUB" style="height:23px;width:auto;">
+        </div>
+        <p class="mt-24">Consultores e Auditores, constituída em 14/03/2013. Planejamento tributário estratégico para empresas em todo Brasil.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="estudo-tributario.html">Estudo Tributário</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="contato.html">Fale conosco</a>
+        <div style="display:flex;gap:10px;margin:14px 0 16px;">
+          <a href="https://wa.me/5583996214000" target="_blank" rel="noopener" aria-label="WhatsApp" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--red);flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.48 1.32 4.95L2 22l5.29-1.39c1.4.76 2.99 1.19 4.75 1.19h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.78 14.09c-.24.68-1.19 1.25-1.95 1.41-.52.11-1.2.2-3.49-.75-2.93-1.21-4.83-4.17-4.98-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.24-.26.53-.32.71-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.24.57.79 1.98.86 2.13.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.29.28-.12.55.16.27.72 1.18 1.55 1.91 1.06.94 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.27.36-.22.6-.13.24.09 1.52.72 1.78.85.26.13.44.19.5.3.06.11.06.63-.18 1.31z"/></svg></a>
+          <a href="https://www.instagram.com/fatimamarquesrc/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--red);flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/in/fatima-marques-1ba301412" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--red);flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zm7.5 0h3.83v2.05h.05c.53-1 1.85-2.05 3.8-2.05C19.7 8 21 10.15 21 14.02V23h-4v-8.05c0-1.92-.03-4.4-2.68-4.4-2.68 0-3.09 2.09-3.09 4.26V23h-4V8z"/></svg></a>
+        </div>
+        <p>(83) 3512-5503</p>
+        <a href="mailto:rcpb@rcpb-fm.com.br">rcpb@rcpb-fm.com.br</a>
+      </div>
+      <div>
+        <h4>RCPB</h4>
+        <p>Shopping Liv Mall<br>Jardim Oceania, João Pessoa/PB</p>
+        <p>Membro BNI João Pessoa</p>
+        <p>Integrante do RC_HUB</p>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <span>© 2026 RCPB Contabilidade — Consultores e Auditores</span>
+      <span>João Pessoa/PB</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
