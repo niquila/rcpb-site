@@ -2,6 +2,14 @@
 
 Site institucional estático (HTML/CSS/JS puro — sem framework, sem build step).
 
+## Publicação atual: rcpb-fm.com.br
+
+Este conteúdo já está publicado em produção em `rcpb-fm.com.br`, mas por
+dentro de um WordPress existente (não como arquivos estáticos direto no
+servidor). Para publicar uma alteração feita aqui, veja
+**[README-DEPLOY.md](README-DEPLOY.md)** — explica o porquê, o processo
+(`python deploy.py`) e o que ainda está pendente.
+
 ## Estrutura
 
 ```
@@ -31,7 +39,7 @@ Como é um site 100% estático, pode ser hospedado em qualquer serviço de hospe
 
 ## O que falta configurar antes de ir ao ar
 
-1. **Formulários** — já estão conectados ao webhook da AcqOps (`https://www.acqops.com.br/webhooks/landing-page?ref=3f023b087ea70368`), definido em `js/main.js` na constante `WEBHOOK_URL`. Cada envio manda um JSON com todos os campos do formulário (por `id`) mais `origem`, `pagina`, `url` e `enviado_em`. **Importante testar após publicar:** o envio usa `fetch` direto do navegador — se o servidor da AcqOps não liberar CORS para o domínio onde o site for hospedado, o envio pode falhar silenciosamente (cai no `catch`, mostra alerta "Não foi possível enviar agora"). Testar um envio de teste assim que o site estiver no ar e confirmar com a AcqOps se o domínio final está liberado.
+1. **Formulários** — já estão conectados ao webhook da AcqOps (`https://www.acqops.com.br/webhooks/landing-page?ref=3f023b087ea70368`), definido em `js/main.js` na constante `WEBHOOK_URL`. Cada envio manda um JSON com todos os campos do formulário (por `id`) mais `origem`, `pagina`, `url` e `enviado_em`. **Importante testar após publicar:** o envio usa `fetch` direto do navegador — se o domínio onde o site for hospedado tiver uma política de segurança (CSP) que não libere `acqops.com.br` em `connect-src`, o envio falha silenciosamente (cai no `catch`, mostra alerta "Não foi possível enviar agora"). **Isso já aconteceu em rcpb-fm.com.br** — ver "O que ainda está pendente" em [README-DEPLOY.md](README-DEPLOY.md). Testar um envio de teste assim que o site estiver no ar.
 2. **Pixel do Google Ads / Meta Ads** — não está instalado. Para rastrear conversões da campanha, adicionar o script de rastreamento no `<head>` de cada página (ou só na `estudo-tributario.html`, se for a landing da campanha).
 3. **Domínio e SSL** — depende de onde for hospedado.
 4. **WhatsApp** — os links já apontam para `https://wa.me/5583996214000` (número do Geraldo, usado no formulário Diagnóstico RCPB). Confirmar se é esse o número correto para todos os contextos do site.
